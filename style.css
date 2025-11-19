@@ -6,7 +6,7 @@ body {
       color: #333;
     }
     header {
-      background: url('images/header_bg.jpg') center/cover no-repeat;
+      background: url('images/header_bg.png') center/cover no-repeat;
       padding: 30px 20px;
       text-align: center;
       color: white;
