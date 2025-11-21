@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Retailtech sensors line</h1>
+    <h1>Retailtech Sensors Line</h1>
     <p>Exploring human detection, occupancy sensing, and smart interaction.</p>
   </header>
 
@@ -21,44 +21,37 @@
   <section id="about" class="section">
     <h2>Summary</h2>
     <p>
-      This is a webpage describing my work at Retailtech startup company. 
-      In Retailtech, we aimed at finding out one of the obvious, but at the 
-      same time, before unobtainable metrics - foot trafic at retail spot. 
-      The retail store is a challenging place to track a position, because 
-      the most accurate method so far, GNSS, obviously, doesn't work indoors.
-      Some of the startups were trying to track the shoppers at the store 
-      with Ultra Wide Band technology, which will give an accurate positioning, though,
-      installations always resulted to be expensive, because a massive amount of
-      location beacons must be installed. Some tried to use Bluetooth and WiFi positioning,
-      but they also require a lot of beacons and have lower accuracy (2-5m), which is unacceptable.
+      This webpage describes my work at a Retailtech startup company.
+      In Retailtech, we aimed to find one of the most obvious, but at the same time previously unobtainable metrics — foot traffic at a retail spot.
+      The retail store is a challenging place to track position, because 
+      the most accurate method so far, GNSS, obviously doesn't work indoors.
+      Some startups tried to track shoppers in the store using Ultra-Wideband technology, which provides accurate positioning, though installations always turned out to be expensive, because a large number of location beacons had to be installed. 
+      Some tried to use Bluetooth and WiFi positioning, but they also require many beacons and have lower accuracy (2–5 m), which is unacceptable.
     </p>
     <p>
-      At Retailtech was chosen a different approach: for each spot of interest, installed
-      a sensor, which tracks traffic locally. The sensor is a distance sensor, which 
-      is constantly measuring the distance, will wait to change in readings and will consider
-      that a customer arrived. Based on how close a customer is and how long the stay lasted,
-      we decided if person took a product, was interested but didn't buy or were just passing by.
+      At Retailtech, a different approach was chosen: for each spot of interest, a sensor was installed that tracks traffic locally. 
+      The sensor is a distance sensor, which constantly measures the distance, waits for a change in readings, and considers that a customer arrived. 
+      Based on how close a customer is and how long the stay lasted, we decided whether the person took a product, was interested but didn't buy, or was just passing by.
     </p>
     <p>
-      Even though, that this approach given good results in most events, there were some scenarios
-      where it had false readings: a shop employee were restocking shelves or person was looking at
-      products at the shelf in front of the spot of interest. Therefore, the decision to replace 
-      sensor with camera was made. 
+      Even though this approach gave good results in most cases, there were some scenarios where it had false readings: for example, a shop employee restocking shelves or a person looking at products at a shelf in front of the spot of interest. 
+      Therefore, the decision to replace the sensor with a camera was made.
     </p>
   </section>
 
   <section id="prototype-details">
-    <h2>Sensors versions</h2>
+    <h2>Sensor Versions</h2>
 
     <div class="prototype-detail">
-    <img src="images/pic1.png" alt="Prototype 1" />
+      <img src="images/pic1.png" alt="Prototype 1" />
       <div class="prototype-description">
-        <h3>Original sensor</h3>
-        <p>This is an original sensor when I first arrived at Retailtech.</p>
+        <h3>Original Sensor</h3>
+        <p>This is the original sensor from when I first arrived at Retailtech.</p>
         <ul>
-          <li>A cost effective solution based on HC-SR04 ultrasonic distance sensor and ESP-32 for WiFi connectivity.</li>
-          <li>Was equipped with: buzzer, green and red LED, and two buttons.</li>
-          <li>Unfortunately, was too bulky, had a cumbersome setup procedure and lower performance with distances over 2m to target.</li>
+          <li>A cost-effective solution based on the HC-SR04 ultrasonic distance sensor and ESP32 for WiFi connectivity.</li>
+          <li>It was equipped with a buzzer, green and red LEDs, and two buttons.</li>
+          <li>Unfortunately, it was too bulky, had a cumbersome setup procedure, and had lower performance with distances over 2 m to the target.</li>
+          <li>I was in charge of modifying the existing firmware and creating a dashboard on the web.</li>
         </ul>
       </div>
     </div>
@@ -66,13 +59,14 @@
     <div class="prototype-detail">
       <img src="images/pic2.png" alt="Prototype 2" />
       <div class="prototype-description">
-        <h3>Prototype 2 - Infrared Time-Of-Fligth (ToF) sensor</h3>
-        <p>An upgraded version of the previous sensor which I was developing.</p>
+        <h3>Prototype 2 — Infrared Time-of-Flight (ToF) Sensor</h3>
+        <p>An upgraded version of the previous sensor that I developed.</p>
         <ul>
-          <li>Enhanced performance and accuracy by around x2-5 times with a smaller size for easier installation.</li>
-          <li>Was equipped with: VL53L1X ToF sensor, smaller buzzer, RGB LED and one button.</li>
-          <li>Designed enclosure with functionality and manufacturing in mind for an easy assembly.</li>
-          <li>Allowed to place the sensor near price tag, which is a great place for taking the readings.</li>
+          <li>I was responsible for developing the electronics and firmware.</li>
+          <li>Enhanced performance and accuracy by around 2–5× with a smaller size for easier installation.</li>
+          <li>Equipped with a VL53L1X ToF sensor, a smaller buzzer, an RGB LED, and one button.</li>
+          <li>Designed the enclosure with functionality and manufacturing in mind for easy assembly.</li>
+          <li>Allowed the sensor to be placed near the price tag, which is a great location for collecting readings.</li>
         </ul>
       </div>
     </div>
@@ -80,27 +74,28 @@
     <div class="prototype-detail">
       <img src="images/pic4.png" alt="Prototype 3" />
       <div class="prototype-description">
-        <h3>Prototype 3 - AI camera based on Raspberry Pi</h3>
-        <p>A camera sensor made by our partners, which was connected using WiFi.</p>
+        <h3>Prototype 3 — AI Camera Based on Raspberry Pi</h3>
+        <p>A camera sensor made by our partners, connected using WiFi.</p>
         <ul>
-          <li>Raspberry Pi Compute Module 4 based design</li>
-          <li>Used proprietary AI software to detect person presense and movements.</li>
-          <li>The design allowed to easily place the sensor in the retail spot.</li>
-          <li>Later, I rewrote it to use open-source YOLO model for detecting people, hands and faces</li>
+          <li>I was in charge of updating the firmware.</li>
+          <li>Raspberry Pi Compute Module 4–based design.</li>
+          <li>Used proprietary AI software to detect person presence and movement.</li>
+          <li>The design allowed easy placement of the sensor at the retail spot.</li>
+          <li>Later, I rewrote it to use an open-source YOLO model to detect people, hands, and faces.</li>
         </ul>
       </div>
     </div>
 
     <div class="prototype-detail">
       <img src="images/pic3.png" alt="Prototype 4" />
-        <div class="prototype-description">
-        <h3>Prototype 4 - Last and unfinished prototype based on Raspberry Pi and CAT-M 4G connectivity</h3>
+      <div class="prototype-description">
+        <h3>Prototype 4 — Final and Unfinished Prototype Based on Raspberry Pi with CAT-M 4G Connectivity</h3>
         <ul>
-          <li>Updated design, made for installation in the coolers for customers.</li>
-          <li>Based on customers request, sensors were equipped with 4G module and sim cards for better connectivity.</li>
-          <li>Had camera port, HDMI, USB, CAT-M, GPIO, optional GNSS for outdoor use.</li>
+          <li>I was responsible for developing the electronic design and firmware.</li>
+          <li>Updated design made for installation in coolers for customers.</li>
+          <li>Based on customer requests, sensors were equipped with a 4G module and SIM cards for better connectivity.</li>
+          <li>Had camera port, HDMI, USB, CAT-M, GPIO, and optional GNSS for outdoor use.</li>
         </ul>
-
       </div>
     </div>
 
@@ -108,7 +103,7 @@
 
   <section id="gallery" class="section">
     <h2>Sensors Gallery</h2>
-    <p>This is a gallery with prototype pictures. Shown in chronological order.</p>
+    <p>This is a gallery with prototype pictures shown in chronological order.</p>
     <div class="gallery">
       <figure>
         <img src="images/pic5.png" alt="Prototype 1" />
@@ -117,11 +112,11 @@
 
       <figure>
         <img src="images/ePic1.png" alt="Prototype 4" />
-        <figcaption>4-layer PCB design of prototype 1</figcaption>
+        <figcaption>4-layer PCB design of prototype 1.</figcaption>
       </figure>
       <figure>
         <img src="images/ePic2.png" alt="Prototype 4" />
-        <figcaption>4-layer PCB design of prototype 1</figcaption>
+        <figcaption>4-layer PCB design of prototype 1.</figcaption>
       </figure>
     </div>
   </section>
